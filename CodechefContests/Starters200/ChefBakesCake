@@ -1,0 +1,22 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner scan = new Scanner(System.in);
+		int N = scan.nextInt();
+		int x = scan.nextInt();
+		int y = scan.nextInt();
+		int maxCakes = y/x;
+		int vehicles = N/maxCakes;
+		if(N%maxCakes!=0){
+		    vehicles++;
+		}
+		System.out.println(vehicles);
+
+	}
+}
