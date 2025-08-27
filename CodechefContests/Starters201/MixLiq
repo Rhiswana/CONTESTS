@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner scan = new Scanner(System.in);
+		int t = scan.nextInt();
+		while(t-->0){
+		     int juice = 0;
+		    int A = scan.nextInt();
+		    int B = scan.nextInt();
+		    for(int i=1; i<=A; i++){
+		        int mix = i*2;
+		        if(mix<=B){
+		            juice = Math.max(juice,i+mix);
+		            continue;
+		        }
+		    }
+            System.out.println(juice);
+		}
+
+	}
+}

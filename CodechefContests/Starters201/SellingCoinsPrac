@@ -1,0 +1,18 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner scan = new Scanner(System.in);
+		int A = scan.nextInt();
+		int B = scan.nextInt();
+		int trade = B*2;
+	    int cost = A+trade;
+	    System.out.println(cost);
+
+	}
+}
