@@ -1,0 +1,38 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+	Scanner scan = new Scanner(System.in);
+	int t = scan.nextInt();
+	while(t-->0){
+	    int n = scan.nextInt();
+	    String S = scan.next();
+	    boolean possible =true;
+	    int i=0;
+	    while(i<n){
+	        if(S.charAt(i)=='1'){
+	            int j=i;
+	            while(j<n && S.charAt(j)=='1'){
+	                j++;
+	            }
+	            int length = j-i;
+	            if(length<3){
+	                possible = false;
+	                break;
+	            }
+	            i=j;
+	        }
+	        else{
+	            i++;
+	        }
+	    }
+     	    
+     	    System.out.println(possible?"Yes":"No");
+	}
+	}
+	}
