@@ -1,0 +1,41 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner scan = new Scanner(System.in);
+		int t = scan.nextInt();
+		while(t-->0){
+		   
+		    int x = scan.nextInt();
+		    int y = scan.nextInt();
+		    int arr[] = new int[6];
+		    int sum =0;
+		    for(int i=0;i<arr.length;i++){
+		       
+		    arr[i] = y+sum;
+		    sum++;
+		    }
+		    int req = 50-x;
+		    int i=0;
+		    outer:
+		    for(i=0;i<arr.length;i++){
+		        for(int j=0;j<arr.length;j++){
+		            if(req==arr[i]+arr[j]){
+		               
+		              System.out.println("Yes");
+		              break outer;
+		            }
+		        }
+		    }
+		    if(i==arr.length){
+		        System.out.println("No");
+		    }
+		  
+		}
+	}
+}
